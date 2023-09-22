@@ -1,0 +1,213 @@
+@import "C:/Users/Dell/OneDrive/Desktop/pagewithsass/page1_withsass/abstracts_sass/_variables.scss";
+@import "C:/Users/Dell/OneDrive/Desktop/pagewithsass/page1_withsass/layout_sass/navbar.scss";
+@import "universal";
+@import "all_headers";
+@import "googlebutton";
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+.login-header h1 {
+  color: #101828;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.password {
+  border-radius: 8px;
+}
+
+.remember-me {
+  color: $secondary-color;
+}
+
+.login-header p {
+  color: $secondary-color;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin-top: 20px;
+  padding: 8vh 42px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.field-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  padding: 1px;
+  color: $text-color;
+  border-radius: 8px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-self: stretch;
+  width: 100%;
+  color: $text-color;
+}
+
+.field-label {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4px;
+  margin-left: 1px;
+  width: 100%;
+}
+
+.field-label label {
+  margin: 0;
+  font-weight: 550;
+}
+
+.field-input input {
+  width: 100%;
+  padding: 10px 14px;
+  border-style: solid;
+  border-color: $border-color;
+  border-radius: 8px;
+  font-weight: lighter;
+  box-shadow: $text-color;
+}
+
+.remember-forgot {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 1px;
+}
+
+.remember-forgot label {
+  margin-right: 10px;
+  font-weight: 550;
+  font-size: medium;
+  color: $text-color;
+}
+
+.remember-forgot a {
+  margin-left: auto;
+  font-size: medium;
+  color: $primary-color;
+}
+
+a:link {
+  color: $primary-color;
+}
+
+.no-account {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.submit-ordinary,
+.submit-google {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.form-box {
+  width: 360px;
+  max-width: 100%;
+}
+
+.submit-google button {
+  width: 100%;
+}
+
+.ordinary {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  font-weight: 550;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.untitled {
+  margin-left: 4px;
+  margin-top: 8px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.label-remember {
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.google-logo {
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+.sign-up-end {
+  color: $primary-color;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.no-account {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 24px;
+}

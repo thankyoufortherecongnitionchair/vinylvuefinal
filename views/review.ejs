@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reviews</title>
+  </head>
+  <body>
+    <h1>Reviews</h1>
+    <ul>
+      <% reviews.forEach(review => { %>
+      <li><a href="/review/<%= review._id %>"><%= review.title %></a></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

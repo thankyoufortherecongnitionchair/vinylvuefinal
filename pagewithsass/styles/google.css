@@ -1,0 +1,13 @@
+.google {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #D0D5DD;
+  color: #344054;
+  box-shadow: none;
+}/*# sourceMappingURL=google.css.map */

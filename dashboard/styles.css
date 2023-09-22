@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.maincontentcontainer {
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.customers {
+    padding-right: 90px;
+}
+
+body {
+    /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #475c6c;
+}
+
+.sidebar:hover .sidebaricons {
+    background-color: #475c6c;
+}
+
+.headertext {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.usericon p,
+.sidebarbottom span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .usericon p,
+.sidebar:hover .sidebarbottom span {
+    opacity: 1;
+}
+
+.hide-search {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu li:hover .sidebaricons {
+    background-color: #667085;
+}
+
+.activityguagecircle .header {
+    padding-bottom: 20px
+}
+
+.activitygraph .header {
+    padding-bottom: 20px;
+}
+
+*/ .sidebarbottom {
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+.hide-text {
+    opacity: 0;
+    transition: opacity 0.00001s ease;
+}
+
+.About h5 {
+    color: #475c6c;
+    font-weight: 400;
+}
+
+.UnitledUI {
+    margin: 0;
+    font-weight: bolder;
+    color: white;
+}
+
+.sidebar:hover .UntitledUI {
+    opacity: 0;
+}
+
+.sidebar:hover .sidebarsearch {
+    opacity: 0;
+}
+
+.sidebar:hover .hide-search {
+    opacity: 1;
+}
+
+.sidebar:hover .hide-text {
+    opacity: 1;
+}
+
+.sidebarsearch {
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 10px 14px 10px 10px;
+    background-color: #344054;
+}
+
+.headerwrapper {
+    display: flex;
+    padding: 16px 0px 16px 0px;
+}
+
+.header {
+    border-bottom: 1px #EAECF0 solid;
+}
+
+.sidebarlogoandtitle {
+    padding: 32px 0px 24px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.activestats {
+    padding: 24px 0px 24px 0px;
+}
+
+.maincontent {
+    padding: 8px 12px 32px 32px;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: -240px;
+    width: 110px;
+    height: 100vh;
+    padding: 8px 26px 8px 26px;
+    overflow: hidden;
+    background: #475c6c;
+    transition: left 0.25s ease-in-out, width 0.25s ease-in-out, z-index 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.sidebar:hover {
+    left: 0;
+    width: 240px;
+    z-index: 2;
+    background-color: #475c6c;
+}
+
+.sidebaricons {
+    background: #475c6c;
+}
+
+.sidebarbottom {
+    position: absolute;
+    top: 75%;
+}
+
+.sidebarlogoandtitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.usericon {
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.otherbuttons {
+    width: 100%;
+}
+
+.usericon p {
+    font-size: small;
+}
+
+.otherbuttons1 {
+    background-color: rgba(249, 249, 249, 0.874);
+    color: #344054;
+    font-size: small;
+    border: solid 1px #D0D5DD;
+    font-weight: 550;
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: none;
+}
+
+.import {
+    background-color: white;
+    color: #475c6c;
+    border: none;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: none;
+}
+
+.usericon p {
+    color: white;
+    padding-left: 5px;
+}
+
+.textandsupptext {
+    display: flex;
+    padding-left: 5px;
+    flex-direction: column;
+}
+
+.userpfp {
+    width: 37px;
+    padding-left: 11px;
+    height: 25px;
+}
+
+.addcustomer {
+    background-color: #475c6c;
+    color: #fff;
+    border: none;
+    font-weight: 550;
+    padding: 10px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: none;
+}
+
+.menu li {
+    padding: 8px 12px;
+    border: 6px;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: #667085;
+}
+
+.menu a {
+    color: #F2F4F7;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu span {
+    font-size: 1.2rem;
+}
+
+.edittable {
+    padding: 16px 16px 16px 16px;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.customers {
+    margin-right: 90px;
+    font-weight: bold;
+    font-size: 45px;
+    margin-right: 650px;
+    line-height: 30px;
+}
+
+.activestats {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.guageimage {
+    display: flex;
+    /* align-items: flex-start; */
+    width: 225px;
+    height: 225px;
+    padding-top: 5px;
+}
+
+.graphimage {
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table tr {
+    border-bottom: 1px solid #EAECF0;
+}
+
+thead td {
+    color: #667085;
+    font-size: 1.5rem;
+    background-color: #F9FAFB;
+}
+
+td {
+    padding: 12px 24px 12px 24px;
+}
+
+thead {
+    border-bottom: #EAECF0;
+}
+
+.table {
+    border: 1px solid #EAECF0;
+    box-shadow: 1px 1px 1px 1px grey;
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+    overflow: auto;
+    background: white;
+    border-radius: 8px;
+}
+
+.people-de p {
+    color: #667085;
+}
+
+.About h5 {
+    color: #475c6c;
+}
+
+.About p {
+    color: #667085;
+    font-size: small;
+}
+
+.company {
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+.trash-button {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+}
+
+.edit-button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 24px;
+    margin-bottom: 5px;
+}
+
+.sidebarsearch2 {
+    margin-left: 520px;
+    border: 1px solid #D0D5DD;
+    background-color: white;
+    font-weight: medium;
+    border-radius: 4px;
+    padding: 10px 14px 10px 10px;
+}
+
+.align-right {
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+.addcustomer-form {
+    display: none;
+    background-color: #475c6c;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.addcustomer-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.addcustomer-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.addcustomer-form input[type="text"],
+.addcustomer-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.addcustomer-form input[type="submit"],
+.addcustomer-form button {
+    padding: 10px 15px;
+    margin-bottom: 6px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.addcustomer-form input[type="submit"]:hover,
+.addcustomer-form button:hover {
+    background-color: #0056b3;
+}
+
+#time-tracker {
+    background-color: #D0D5DD;
+
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.slideshow-text {
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+}
+
+.carousel-inner {
+    max-height: 50vh;
+}
+
+.carousel-inner>.item>img {
+    width: 20%;
+    height: 20%;
+}
+
+@media (max-width:1105px) {
+
+    .maincontent,
+    .headerwrapper,
+    .activestats,
+    .otherbuttons,
+    .maincontentcontainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 60px;
+        padding-left: 2px;
+    }
+
+    .maincontent {
+        border: 0;
+        margin: 0;
+
+    }
+}
+
+
+
+
+
+
+/* external css: flickity.css */
+
+
+
+/*# sourceMappingURL=styles.css.map */

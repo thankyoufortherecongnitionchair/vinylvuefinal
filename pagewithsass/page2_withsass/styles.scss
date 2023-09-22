@@ -1,0 +1,196 @@
+@import 'navbar.scss';
+@import 'universal.scss';
+
+@import 'allheaders.scss';
+@import 'google.scss';
+@import 'ordinarybutton.scss';
+
+
+  
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    margin-bottom: 20px;
+  
+    h1 {
+      color: #101828;
+      text-align: center;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 38px;
+    }
+  
+    p {
+      color: #667085;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  
+  .nav-link {
+    color: grey;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    margin-top: 20px;
+    padding: 8vh 42px;
+    flex-direction: column;
+    align-items: center;
+  
+    .image1 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  
+    .header1 {
+      font-size: 23px;
+      font-weight: 600;
+      line-height: 38px;
+      margin-top: 32px;
+    }
+  
+    .field-input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4px;
+      padding: 1px;
+      color: #344054;
+      border-radius: 8px;
+  
+      input {
+        width: 100%;
+        padding: 10px 14px;
+        border-style: solid;
+        border-color: #D0D5DD;
+        border-radius: 8px;
+        font-weight: lighter;
+        box-shadow: #344054;
+      }
+    }
+  
+    .input-section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-self: stretch;
+      width: 100%;
+      color: #344054;
+  
+      .field-label {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 4px;
+        margin-left: 1px;
+        width: 100%;
+  
+        label {
+          margin: 0;
+          font-weight: 550;
+        }
+      }
+    }
+  
+    .remember-forgot {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      margin-bottom: 1px;
+  
+      label {
+        margin-right: 10px;
+        font-weight: 550;
+        font-size: medium;
+        color: #344054;
+      }
+  
+      a {
+        margin-left: auto;
+        font-size: medium;
+        color: #7F56D9;
+      }
+    }
+  
+    .no-account {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      color: #667085;
+      gap: 4px;
+      margin-top: 24px;
+    }
+  
+    .submit-ordinary,
+    .submit-google {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 2px;
+    }
+  
+    .form-box {
+      width: 360px;
+      max-width: 100%;
+    }
+  
+    .submit-google button {
+      width: 100%;
+    }
+  
+    .ordinary:hover {
+      background-color: #613EEA;
+    }
+  
+    .untitled {
+      margin-left: 4px;
+      margin-top: 8px;
+      font-size: 25px;
+      color: black;
+      font-weight: bold;
+    }
+  
+    .label-remember {
+      padding-left: 8px;
+      padding-top: 8px;
+    }
+  
+    .google-logo {
+      width: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 4px;
+    }
+  
+    .sign-up-end {
+      color: #7F56D9;
+    }
+  
+    .button-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 32px;
+    }
+  
+    .no-account {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 4px;
+      margin-top: 24px;
+    }
+  }

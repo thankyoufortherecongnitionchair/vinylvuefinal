@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website Landing Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: black;
+        margin: 0;
+        overflow: hidden;
+      }
+      .click-anywhere p {
+        color: white;
+      }
+      .click-anywhere {
+        display: flex;
+        position: fixed;
+      }
+
+      .slideshow-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+      }
+      .slideshow-text {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+          -225deg,
+          aquamarine 0%,
+          #44107a 25%,
+          #ff1361 50%,
+          #fff800 75%,
+          white 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 190px;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      .slideshow-text {
+        font-size: 36px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      .login-link {
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .login-link:hover {
+        background-color: #0056b3;
+      }
+
+      .active {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/loginsass">
+      <div class="slideshow-container">
+        <!-- Create multiple slides with different text -->
+        <div class="slideshow-text active" id="slide1">
+          Welcome to Vinyl Vue!
+        </div>
+        <div class="slideshow-text" id="slide2">
+          Click anywhere to access the login page...
+        </div>
+        <div class="slideshow-text" id="slide3">...And enter the Website</div>
+      </div>
+    </a>
+    <script>
+      let currentSlide = 1;
+      showSlide(currentSlide);
+
+      function showSlide(n) {
+        const slides = document.getElementsByClassName("slideshow-text");
+        if (n > slides.length) {
+          currentSlide = 1;
+        }
+        if (n < 1) {
+          currentSlide = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+        slides[currentSlide - 1].classList.add("active");
+      }
+
+      setInterval(() => {
+        currentSlide++;
+        showSlide(currentSlide);
+      }, 3000);
+    </script>
+  </body>
+</html>

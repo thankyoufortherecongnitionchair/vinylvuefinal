@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trial</title>
+
+    <link rel="stylesheet" href="trial.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo">Vi<span class="secondhalf">Vu</span></a>
+        <p class="greeting"><% if (user) { %>Hello, <%= user.name %>!<% } %></p>
+      </div>
+    </header>
+    <section class="home parallax-home" id="home">
+      <div class="home-text container">
+        <h2 class="home-title">Vinyl Vue</h2>
+        <span class="home-subtitle">Which one would you want to read?</span>
+      </div>
+    </section>
+
+    <div class="post-filter container">
+      <span class="filter-item active-filter" data-filter="all">All </span>
+      <span class="filter-item" data-filter="design">design </span>
+      <span class="filter-item" data-filter="tech">tech </span>
+      <span class="filter-item" data-filter="mobile">mobile </span>
+    </div>
+
+    <section class="post container">
+      <% reviews.forEach((review) => { %>
+      <div class="post-box">
+        <img src="<%= review.imageurl %>" alt="test" class="post-img" />
+        <h2 class="category"><%= review.artist %></h2>
+        <a href="/review/<%= review._id %>" class="post-title"
+          ><%= review.title %></a
+        >
+        <span class="post-date"><%= review.date %></span>
+        <p class="post-description"><%= review.content %></p>
+        <div class="profile">
+          <img src="profile.png" alt="test" class="profile-img" />
+          <span class="profile-name"><%=review.writer %></span>
+        </div>
+      </div>
+      <% }); %>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="/testdashboard">Back to the top</a></li>
+              <li><a href="#">click</a></li>
+              <li><a href="#">click</a></li>
+              <li><a href="#">click</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>shop</h4>
+            <ul>
+              <li><a href="#">click</a></li>
+              <li><a href="#">click</a></li>
+              <li><a href="#">click</a></li>
+              <li><a href="#">click</a></li>
+              <li><a href="#">click</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>My Socials:</h4>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/aniruddh-tiwari-7ab938134/"
+                  >linkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/aniruddh_.tiwari/"
+                  >Instagram</a
+                >
+              </li>
+              <li><a href="#">click</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>hello</h4>
+            <ul>
+              <li><a href="#">click</a></li>
+            </ul>
+          </div>
+          <div class="publisher">
+            <p>Designed and Developed by Aniruddh Tiwari.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="JQuery.js"></script>
+  </body>
+</html>

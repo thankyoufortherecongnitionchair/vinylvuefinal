@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.post-date {
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+.post-description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+
+
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0 2rem;
+
+}
+
+.greeting {
+    padding: 5px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    text-align: right;
+    font-size: 18px;
+    margin-right: 20px;
+    color: antiquewhite;
+    font-weight: bolder;
+}
+
+.secondhalf {
+    background-color: #7F56D9;
+    border-radius: 8px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #F9F5FF;
+    border-radius: 8px;
+    padding: 3px;
+    color: black;
+
+}
+
+.logo:hover {
+    transform: scale(1.09);
+    transition: transform 0.1s ease-in-out;
+}
+
+.home {
+    width: 100%;
+    background-image: url("C:/Users/Dell/OneDrive/Desktop/writing_blog_project/views/background.jpg");
+    min-height: 440px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-text {
+    color: black;
+    text-align: center;
+}
+
+.home-title {
+    /* mix-blend-mode: difference; */
+    color: antiquewhite;
+
+    font-weight: bolder;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.home-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F9F5FF;
+}
+
+.post-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+
+.filter-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.post {
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.post-title {
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.profile {
+    background-color: #EAECF0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: #EAECF0 4px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.post-box {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    transition: background-color 0.3s ease;
+    padding: 10px 10px 10px 10px;
+}
+
+.post-box:hover {
+    background-color: #dfd0ff;
+    box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.5);
+
+    .profile {
+        background-color: white;
+    }
+}
+
+.post-box:hover {
+    transform: scale(1.09);
+    transition: transform 0.1s ease-in-out;
+}
+
+.parallax-home {
+    background-image: url('books.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    /* Adjust text color as needed */
+}
+
+
+.post-img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+
+}
+
+.category {
+    margin-bottom: 3px;
+    font-size: 1.3rem;
+    color: #7F56D9;
+
+}
+
+.post-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-header {
+
+    width: 100%;
+    height: 500px;
+}
+
+
+.post-container {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+}
+
+.back-home {
+    color: purple;
+    font-size: 0.9rem;
+}
+
+.header-title {
+    width: 90%;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.post-content {
+    margin-top: 2rem !important;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+}
+
+.post-text {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+@media(max-width:1060px) {
+    .container {
+        margin: 0, auto;
+        width: 95;
+    }
+
+    .home-text {
+        width: 100%;
+
+    }
+
+}
+
+.footer {
+    background-image: url("background.jpg");
+    /* Replace with the path to your footer background image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Adjust the height as needed */
+    display: flex;
+    color: black;
+    padding: 40px;
+}
+
+.row {
+    padding: 10px;
+
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: black;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.footer a {
+    color: black;
+    font-weight: bold;
+}
+
+.footer-col ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.publisher {
+    display: flex;
+    font-weight: bolder;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.footer-col ul li a:hover {
+    color: black;
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-col {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
