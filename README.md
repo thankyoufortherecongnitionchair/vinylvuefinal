@@ -1,4 +1,4 @@
-﻿# VinylVue
+﻿# Blog site using mongo and ejs
 
 Its another version of my flagship site vinyl vue, but this one uses EJS, Mongo, and many user authentication features.
 
