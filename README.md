@@ -10,5 +10,5 @@ to use:
 1) clone
 2) npm i to install all dependencies
 3) create mongo atlas credentials and create documents
-4) enter the entry point. create an accound, and test the login features on your own.
+4) enter the entry point. create an account, and test the login features on your own.
 
